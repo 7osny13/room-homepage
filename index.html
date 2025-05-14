@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Room homepage</title>
+</head>
+
+<body>
+  <!-- main content wrapper -->
+  <main class="main-content">
+    <section class="hero">
+      <!-- header -->
+      <header class="header">
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
+          <figure class="logo-container">
+            <img src="images/logo.svg" alt="Room Logo" class="logo" />
+          </figure>
+          <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <img src="images/icon-hamburger.svg" alt="Menu toggle icon" />
+          </button>
+          <div class="overlay"></div>
+          <div class="nav-links">
+            <button class="close-nav" aria-label="Close navigation menu">
+              <img src="images/icon-close.svg" alt="Close navigation icon" />
+            </button>
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Shop</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Contact</a>
+          </div>
+        </nav>
+      </header>
+      <!-- hero section -->
+      <div class="hero-container">
+        <div class="carousel">
+          <figure class="hero-content" hidden>
+            <picture>
+              <source srcset="images/desktop-image-hero-1.jpg" media="(min-width: 768px)">
+              <img src="images/mobile-image-hero-1.jpg" alt="hero " class="hero-1" />
+            </picture>
+            <figcaption class="hero-caption">
+              Discover innovative ways to decorate
+            </figcaption>
+            <div class="hero-description">
+              <p>
+                We provide unmatched quality, comfort, and style for property owners across the country.
+                Our experts combine form and function in bringing your vision to life. Create a room in your
+                own style with our collection and make your property a reflection of you and what you love.
+              </p>
+            </div>
+            <div class="shop-now" >
+              <button class="shop-button" aria-label="Shop now">
+                <span>Shop Now</span>
+                <img src="images/icon-arrow.svg" alt="Arrow icon" />
+              </button>
+            </div>
+          </figure>
+          <figure class="hero-content" hidden>
+            <picture>
+              <source srcset="images/desktop-image-hero-2.jpg" media="(min-width: 768px)">
+              <img src="images/mobile-image-hero-2.jpg" alt="hero " class="hero-1" />
+            </picture>
+            <figcaption class="hero-caption">
+              We are available all across the globe
+            </figcaption>
+            <div class="hero-description">
+              <p>
+                With stores all over the world, it's easy for you to find furniture for your home or place of business.
+                Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
+                store locator. Any questions? Don't hesitate to contact us today.
+              </p>
+            </div>
+            <div class="shop-now" >
+              <button class="shop-button" aria-label="Shop now">
+                <span>Shop Now</span>
+                <img src="images/icon-arrow.svg" alt="Arrow icon" />
+              </button>
+            </div>
+          </figure>
+          <figure class="hero-content" >
+            <picture>
+              <source srcset="images/desktop-image-hero-3.jpg" media="(min-width: 768px)">
+              <img src="images/mobile-image-hero-3.jpg" alt="hero " class="hero-1" />
+            </picture>
+            <figcaption class="hero-caption">
+              Manufactured with the best materials
+            </figcaption>
+            <div class="hero-description">
+              <p>
+                Our modern furniture store provide a high level of quality. Our company has invested in advanced
+                technology
+                to ensure that every product is made as perfect and as consistent as possible. With three decades of
+                experience in this industry, we understand what customers want for their home and office.
+              </p>
+            </div>
+            <div class="shop-now" >
+              <button class="shop-button" aria-label="Shop now">
+                <span>Shop Now</span>
+                <img src="images/icon-arrow.svg" alt="Arrow icon" />
+              </button>
+            </div>
+          </figure>
+        </div>
+        <div class="arrow-container">
+          <button class="arrow-left" aria-label="Previous slide">
+            <img src="images/icon-angle-left.svg" alt="Left arrow icon" />
+          </button>
+          <button class="arrow-right" aria-label="Next slide">
+            <img src="images/icon-angle-right.svg" alt="Right arrow icon" />
+          </button>
+        </div>
+        
+      </div>
+    </section>
+    <section class="about">
+      <div class="about-container">
+        <div class="about-image">
+          <picture>
+            <img src="images/image-about-dark.jpg" alt="About our furniture dark" class="about-image">
+          </picture>
+        </div>
+        <div class="about-description">
+          <h2 class="about-title">About our furniture</h2>
+          <p class="about-desc">
+            Our multifunctional collection blends design and function to suit your individual taste.
+            Make each room unique, or pick a cohesive theme that best express your interests and what
+            inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+            or anything in between. Product specialists are available to help you create your dream space.
+          </p>
+        </div>
+        <div class="about-image-2">
+          <picture>
+            <img src="images/image-about-light.jpg" alt="About our furniture light" class="about-image">
+          </picture>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root {
+  --White: hsl(0, 100%, 100%);
+  --Grey-500: hsl(0, 0%, 63%);
+  --Grey-800: hsl(0, 0%, 27%);
+  --Black: hsl(0, 0%, 0%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  z-index: 1000;
+}
+
+.logo-container {
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.header .main-nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  padding: 30px 20px;
+  width: 100%;
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav-links.active {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  background-color: var(--White);
+  z-index: 100;
+}
+
+
+
+.nav-link {
+  display: block;
+  margin: 50px 0;
+  color: var(--Black);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-left: 30px;
+}
+
+.nav-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 200;
+  position: relative;
+  font-size: 16px;
+}
+
+/* Overlay background */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(81, 77, 77, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 100;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Close button inside nav menu */
+.close-nav {
+  margin-right: 2rem;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+.hero-content {
+  width: 100%;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+}
+
+.hero-content picture source,
+.hero-content picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.arrow-container {
+  position: absolute;
+  bottom: 28%;
+  right: 0;
+  display: flex;
+  transform: translateY(-50%);
+  z-index: 10001;
+  background-color: var(--Black);
+}
+
+.arrow-container button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--White);
+  font-size: 2rem;
+  padding: 10px 20px;
+}
+
+
+.hero-content figcaption {
+  padding: 30px 20px 10px;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.hero-content .hero-description {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--Grey-500);
+}
+
+.shop-now {
+  padding: 10px 20px;
+}
+
+.shop-now button {
+  background-color: transparent;
+  color: var(--Black);
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+
+.shop-now button span {
+  margin-right: 10px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.about {
+  margin-top: 7.3rem;
+}
+
+.about-image img {
+  width: 100%;
+}
+
+.about-description {
+  padding: 30px 20px;
+}
+
+.about-description h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+.about-description p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--Grey-500);
+  padding-top: 10px;
+}
+
+.about-image-2 {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+
+  .header {
+    width: 40%;
+  }
+
+
+  .header .main-nav {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0;
+    width: none;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .logo-container {
+
+    margin-right: 30px;
+    width: unset;
+  }
+
+  .nav-links {
+    display: flex;
+    position: none;
+    background-color: transparent;
+    z-index: 100;
+  }
+
+  .nav-link {
+    display: flex;
+    margin: 50px 0;
+    color: var(--White);
+    margin-left: 30px;
+  }
+
+
+
+  .close-nav {
+    display: none;
+  }
+.hero{
+  height: 93vh;
+}
+
+  .hero-content {
+    width: 100%;
+    height: 60%;
+     display: grid;
+  grid-template-columns: 2fr 1fr; /* two columns */
+  grid-template-rows: auto; /* one row */
+  }
+
+  .carousel {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-content:nth-child(2),.hero-content:nth-child(3) {
+    display: none;
+  }
+
+
+  .arrow-container {
+    bottom: 19px;
+    right: 400px;
+  }
+
+
+
+  .hero-content picture{
+    grid-column: 1;        /* left column */
+    grid-row: 1 / span 3;  /* span the full height of the right column */
+  }
+
+  .hero-content figcaption {
+    padding : 8rem 4rem 0;
+   grid-column: 2;
+  grid-row: 1;
+  }
+
+  .hero-content .hero-description {
+    padding: 0 4rem;
+    grid-column: 2;
+  grid-row: 2;
+  }
+
+  .shop-now {
+    padding: 0 4rem;
+    grid-column: 2;
+  grid-row: 3;
+  }
+
+  
+
+
+
+  .about {
+  margin-top: unset;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+  
+}
+
+.about-image {
+  width: 100%; 
+}
+
+}
